@@ -1,3 +1,4 @@
+let randomArtist = ["eminem", "linkenpark", "queen"];
 async function fetchsongs(query) {
     query.forEach(async (e) => {
         let res = await fetch(
@@ -26,3 +27,4 @@ async function fetchAlbums(songs) {
         </div>`;
     });
 }
+fetchsongs(randomArtist);
