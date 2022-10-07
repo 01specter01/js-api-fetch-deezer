@@ -22,7 +22,7 @@ async function fetchAlbums(songs) {
     songs.forEach((song) => {
         let albumCard = document.querySelector(".container");
         albumCard.innerHTML += `<div class="col-lg-3 col-sm-12 ">
-        <img/ scr="${song.album.cover_medium} " class="image-card">
+        <img src="${song.album.cover_medium} " class="image-card"/>
         <p >${song.title}</p>
         </div>`;
     });
